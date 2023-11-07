@@ -1,42 +1,30 @@
 package Giocattolaio;
+import java.util.ArrayList;
+import java.util.List;
+
 public class Cliente {
     private int id;
     private String nome;
     private String indirizzoEmail;
+    public List<Integer> idGiochiAquistati = new ArrayList<>();
 
-    public Cliente(int id, String nome, String indirizzoEmail) {
-        this.id = id;
-        this.nome = nome;
-        this.indirizzoEmail = indirizzoEmail;
+    public Cliente(int id, String n, String email){
+        this.id=id;
+        this.nome=n;
+        this.indirizzoEmail= email;
     }
-
-    // Getter per l'ID
+    
+    
+    
     public int getId() {
         return id;
     }
 
-    // Setter per l'ID
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    // Getter per il nome
-    public String getNome() {
-        return nome;
-    }
-
-    // Setter per il nome
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Getter per l'indirizzo email
     public String getIndirizzoEmail() {
         return indirizzoEmail;
     }
 
-    // Setter per l'indirizzo email
-    public void setIndirizzoEmail(String indirizzoEmail) {
-        this.indirizzoEmail = indirizzoEmail;
+    public String getNome() {
+        return nome;
     }
 }

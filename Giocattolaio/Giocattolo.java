@@ -1,56 +1,46 @@
 package Giocattolaio;
 
-public class Giocattolo {
+public class Giocattolo{
+    static private int contatore=1;
     private int id;
     private String nome;
     private double prezzo;
-    private String etaConsigliata;
+    private int etaConsigliata;
+    private int quantita;
 
-    public Giocattolo(int id, String nome, double prezzo, String etaConsigliata) {
-        this.id = id;
-        this.nome = nome;
-        this.prezzo = prezzo;
-        this.etaConsigliata = etaConsigliata;
+    public Giocattolo(String n, double pr, int etaC, int q){
+        this.id=contatore;
+        this.nome=n;
+        this.prezzo=pr;
+        this.etaConsigliata=etaC;
+        this.quantita=q;
+        contatore++;
+    }
+    
+    
+    
+    
+    public int getEtaConsigliata() {
+        return etaConsigliata;
     }
 
-    // Getter per l'ID
     public int getId() {
         return id;
     }
 
-    // Setter per l'ID
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    // Getter per il nome
     public String getNome() {
         return nome;
     }
 
-    // Setter per il nome
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    // Getter per il prezzo
     public double getPrezzo() {
         return prezzo;
     }
 
-    // Setter per il prezzo
-    public void setPrezzo(double prezzo) {
-        this.prezzo = prezzo;
+    public int getQuantita() {
+        return quantita;
     }
 
-    // Getter per l'età consigliata
-    public String getEtaConsigliata() {
-        return etaConsigliata;
-    }
-
-    // Setter per l'età consigliata
-    public void setEtaConsigliata(String etaConsigliata) {
-        this.etaConsigliata = etaConsigliata;
+    public void modificaQuantitaDopoVendita(){
+        this.quantita-=1;
     }
 }
-
