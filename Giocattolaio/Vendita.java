@@ -1,19 +1,22 @@
 package Giocattolaio;
 
-public class Vendita{
-    //metodo a cui passo un oggetto cliente e un int che rappresenta l'id di un gioco che viene acquistato da un cliente    
-    public int idCliente=0;
-    public int idGiocattolo=0;
+public class Vendita {
+    
+    public static int idProgeressivo = 1;
+    public String vendita= "";
+    int id;
+    Giocattolo g;
+    Cliente p;
 
-
-    public void registraVendita(Cliente c, Giocattolo g){
-        if(g.getQuantita()>0){
-            c.giochi.add(g);
-            System.out.println("Sto registrando la vendita del giocattolo "+g.getNome()+ " al cliente "+c.getNome());
-            g.modificaQuantitaDopoVendita();
-            this.idCliente=c.getId();
-            this.idGiocattolo=g.getId();
-            
-        }
+    public Vendita(Giocattolo g, Cliente p){
+        this.g = g;
+        this.p = p;
+        idProgeressivo++;
     }
+
+    @Override
+    public String toString(){
+        return idProgeressivo + " vendita: " + p + " ha comprato " + g;
+    }
+
 }
