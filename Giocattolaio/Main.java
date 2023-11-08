@@ -6,10 +6,10 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         
-        Giocattolo g1 = new Giocattolo("scacchi",20,3);
-        Giocattolo g2 = new Giocattolo("dama", 15,3);
-        Giocattolo g3 = new Giocattolo("bicicletta", 130, 10);
-        Giocattolo g4 = new Giocattolo("monopattino", 60, 10);
+        Giocattolo g1 = new Giocattolo("bambola",20,3);
+        Giocattolo g2 = new Giocattolo("pistola d'acqua", 15,3);
+        Giocattolo g3 = new Giocattolo("overboard", 130, 10);
+        Giocattolo g4 = new Giocattolo("macchinina", 10, 8);
 
         int ritorno;
 
@@ -29,7 +29,7 @@ public class Main {
         System.out.print("Inserisci nome: ");
         String nome = input.nextLine();
         Cliente c1 = new Cliente(nome,mail);
-        if((mail.equals("admin")) && (nome.equals("admin"))){
+        if((mail.equals("admin@gamil.com")) && (nome.equals("admin"))){
 
             //menu per admin
             do{
@@ -46,13 +46,5 @@ public class Main {
 
             
         }
-
-
-      
-
-        //posso far ritornare un valore della funzione e se è negativo esco dal programma
-
-
-    }
-    
+    }  
 }

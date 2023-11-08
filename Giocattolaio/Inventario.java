@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Inventario {
     
     ArrayList <Giocattolo> listaGiocattoli = new ArrayList<Giocattolo>();
-    String mailAdmin = "admin";
+    String mailAdmin = "admin@gmail.com";
     String nomeAdmin = "admin";
 
     
