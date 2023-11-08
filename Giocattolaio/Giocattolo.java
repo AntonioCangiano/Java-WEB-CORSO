@@ -16,10 +16,7 @@ public class Giocattolo{
         this.quantita=q;
         contatore++;
     }
-    
-    
-    
-    
+
     public int getEtaConsigliata() {
         return etaConsigliata;
     }
