@@ -1,5 +1,12 @@
 package Giocattolaio;
-
+/*
+ * 
+ * 
+ * SIAMO NEL BRANCH TEST
+ * 
+ * 
+ * 
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -46,6 +53,5 @@ public class Main {
 
             
         }
-        System.out.println("Hello TEST!");
     }  
 }
