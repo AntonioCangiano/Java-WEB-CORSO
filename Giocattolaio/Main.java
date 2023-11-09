@@ -1,5 +1,14 @@
 package Giocattolaio;
-
+/*
+ * 
+ * 
+ *   SIAMO NEL BRANCH MAIN
+ * 
+ * 
+ * 
+ * 
+ * 
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -46,6 +55,5 @@ public class Main {
 
             
         }
-        System.out.println("Hello MAIN!");
     }  
 }
