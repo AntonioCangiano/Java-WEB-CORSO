@@ -20,5 +20,3 @@ public class Vendita {
     }
 
 }
-// Compare this snippet from Giocattolaio/Cliente.java:
-//provaprova
