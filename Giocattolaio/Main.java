@@ -46,6 +46,6 @@ public class Main {
 
             
         }
-        System.out.println("Hello, World_Test!");
+        System.out.println("Hello, World_Main!");
     }  
 }
