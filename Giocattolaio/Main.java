@@ -56,5 +56,4 @@ public class Main {
             
         }
     }  
-    System.out.println("Siamo nel branch main");
 }
