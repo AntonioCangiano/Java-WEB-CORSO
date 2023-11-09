@@ -51,8 +51,6 @@ public class Main {
             do{
                 ritorno = Interfaccia.metodiCliente(inventario,c1,acquisti);
             }while(ritorno > 0);
-
-
             
         }
     }  

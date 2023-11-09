@@ -18,5 +18,4 @@ public class Vendita {
     public String toString(){
         return idProgeressivo + " vendita: " + p + " ha comprato " + g;
     }
-
 }
