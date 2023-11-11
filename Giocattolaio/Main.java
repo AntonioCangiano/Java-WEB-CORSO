@@ -15,7 +15,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         
-        Giocattolo g1 = new Giocattolo("bambola",20,3);
+        /*Giocattolo g1 = new Giocattolo("bambola",20,3);
         Giocattolo g2 = new Giocattolo("pistola d'acqua", 15,3);
         Giocattolo g3 = new Giocattolo("overboard", 130, 10);
         Giocattolo g4 = new Giocattolo("macchinina", 10, 8);
@@ -53,5 +53,10 @@ public class Main {
             }while(ritorno > 0);
             
         }
-    }  
+        /* */
+
+        DbManger db = new DbManger();
+        db.openConnection();
+    } 
+    
 }
