@@ -1,4 +1,3 @@
-package gestione_utenze;
 /**
  * TODO:
  * Limitare il numero di tentativi nel login
