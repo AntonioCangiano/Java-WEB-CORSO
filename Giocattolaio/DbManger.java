@@ -1,6 +1,6 @@
 package Giocattolaio;
 
-import java.sql.*;
+/*import java.sql.*;
 
 public class DbManger {
     public String DB_url = "jdbc:mysql://localhost:3306/";
@@ -28,5 +28,41 @@ public class DbManger {
             }
         }
 
+    }
+}*/
+
+
+import java.sql.*;
+import javax.swing.*;
+public class DbManger {
+    //Connection conn=null;
+    public static Connection ConnectDB(){
+
+        String url = "jdbc:mysql://localhost:3306/utenti";
+        String username = "root";
+        String password = "root";
+
+        System.out.println("Connecting database...");
+
+        try {
+            Connection connection = DriverManager.getConnection(url, username, password);
+            return connection;
+            //connection.close();
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+            return null;
+        }        
+    }
+     public static void main(String args[]) {
+        Connection conn=ConnectDB();
+        
+        String query = "INSERT INTO utente (nome, email, password) VALUES ('Antonio Cangiano', 'a.cangiano04@gmail.com', 'root')";
+
+        try (Statement st = conn.prepareStatement(query)) {
+            st.executeUpdate(query);
+            JOptionPane.showMessageDialog(null, "Utente inserito correttamente");
+        } catch (SQLException e) {
+            JOptionPane.showMessageDialog(null, e);
+        }
     }
 }
