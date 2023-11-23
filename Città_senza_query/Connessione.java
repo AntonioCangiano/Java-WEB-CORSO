@@ -94,6 +94,26 @@ public class Connessione {
         }
     }
 
+    public void eseguiEliminazione(Connection conn, String nomeCitta) {
+        try {
+            String query = "DELETE FROM città WHERE Nome = ?";
+    
+            try (PreparedStatement preparedStatement = conn.prepareStatement(query)) {
+                preparedStatement.setString(1, nomeCitta);
+    
+                int rowsAffected = preparedStatement.executeUpdate();
+    
+                if (rowsAffected > 0) {
+                    System.out.println(rowsAffected + " righe eliminate con successo.");
+                } else {
+                    System.out.println("Nessuna riga eliminata. Potrebbe non esistere una città con il nome specificato.");
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void closeConnection(Connection conn) {
         if (conn != null) {
             try {

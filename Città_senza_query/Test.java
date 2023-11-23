@@ -14,6 +14,9 @@ public class Test {
             connessione.eseguiInsert(conn, "Trapani");
             connessione.eseguiAggiornamento(conn, "Catania", "Caltanissetta");
             connessione.eseguiSelect(conn);
+            connessione.eseguiEliminazione(conn, "Trapani");
+            connessione.eseguiInsert(conn, "Gela");
+            connessione.eseguiSelect(conn);
             connessione.closeConnection(conn);
         }
     }
